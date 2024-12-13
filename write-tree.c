@@ -1,4 +1,5 @@
 #include "cache.h"
+#include "string.h"
 
 static int check_valid_sha1(unsigned char *sha1)
 {

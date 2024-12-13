@@ -1,4 +1,5 @@
 #include "cache.h"
+#include "string.h"
 
 static int unpack(unsigned char *sha1)
 {

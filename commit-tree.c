@@ -1,4 +1,5 @@
 #include "cache.h"
+#include "string.h"
 
 #include <pwd.h>
 #include <time.h>

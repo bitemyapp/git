@@ -1,4 +1,5 @@
 #include "cache.h"
+#include "string.h"
 
 #define MTIME_CHANGED	0x0001
 #define CTIME_CHANGED	0x0002

@@ -1,8 +1,5 @@
 #include "cache.h"
-
-const char *sha1_file_directory = NULL;
-struct cache_entry **active_cache = NULL;
-unsigned int active_nr = 0, active_alloc = 0;
+#include "string.h"
 
 void usage(const char *err)
 {
@@ -60,7 +57,7 @@ char *sha1_file_name(unsigned char *sha1)
 	static char *name, *base;
 
 	if (!base) {
-		char *sha1_file_directory = getenv(DB_ENVIRONMENT) ? : DEFAULT_DB_ENVIRONMENT;
+		sha1_file_directory = getenv(DB_ENVIRONMENT) ? : DEFAULT_DB_ENVIRONMENT;
 		int len = strlen(sha1_file_directory);
 		base = malloc(len + 60);
 		memcpy(base, sha1_file_directory, len);
