@@ -1,3 +1,8 @@
+# Educational purposes only
+
+I made this branch & fork so that there would be a working/building version of Linus' original commit. I might make other branches that go further than this but my goal was really just to get all the binaries to build out of the box.
+
+Original README follows from here:
 
 	GIT - the stupid content tracker
 
